@@ -1,4 +1,3 @@
-// src/components/ScheduleGrid.jsx
 import React from "react";
 import { useParams } from "react-router-dom";
 
@@ -77,7 +76,7 @@ export default function ScheduleGrid({
   return (
     <div className="card">
       <h3>Расписание — класс {clsId}</h3>
-
+    <div className="table-wrapper">
       <table className="table">
         <thead>
           <tr>
@@ -131,6 +130,7 @@ export default function ScheduleGrid({
           ))}
         </tbody>
       </table>
+      </div>
     </div>
   );
 }
